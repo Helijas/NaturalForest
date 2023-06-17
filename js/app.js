@@ -26,8 +26,8 @@ if (window.screen.width >= 769){
 		// );
 		Object.assign(document.documentElement, {
 			style: `
-			--move-x: ${(event.accelerationIncludingGravity.x)}deg;
-			--move-y: ${(event.accelerationIncludingGravity.y)}deg;
+			--move-x: ${(event.accelerationIncludingGravity.x) * 1.3}deg;
+			--move-y: ${(event.accelerationIncludingGravity.y) * 1.3}deg;
 			`
 		})
 	}
