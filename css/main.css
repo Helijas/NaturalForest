@@ -86,7 +86,7 @@ body{
 	text-transform: none;
 	font-family: merriweather-italic-3d;
 	letter-spacing: normal;
-	font-size: calc(var(--index) * .8);
+	font-size: calc(var(--index) * .7);
 	line-height: 3;
 }
 .button-start{

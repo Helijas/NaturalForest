@@ -19,11 +19,11 @@ if (window.screen.width >= 769){
 	
 	// Обработчик события DeviceMotionEvent
 	function motion_hook(event) {
-		console.log('Accelerometer: '
-			+ 'X=' + event.accelerationIncludingGravity.x
-			+ 'Y=' + event.accelerationIncludingGravity.y
-			+ 'Z=' + event.accelerationIncludingGravity.z
-		);
+		// console.log('Accelerometer: '
+		// 	+ 'X=' + event.accelerationIncludingGravity.x
+		// 	+ 'Y=' + event.accelerationIncludingGravity.y
+		// 	+ 'Z=' + event.accelerationIncludingGravity.z
+		// );
 		Object.assign(document.documentElement, {
 			style: `
 			--move-x: ${(event.accelerationIncludingGravity.x) * 4}deg;
