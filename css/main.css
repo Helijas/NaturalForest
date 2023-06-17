@@ -72,7 +72,7 @@ body{
 }
 
 .hero-content{
-	font-size: calc(var(--index) * 2.9);
+	font-size: calc(var(--index) * 2.4);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: calc(var(--index) * -.15);
@@ -86,7 +86,7 @@ body{
 	text-transform: none;
 	font-family: merriweather-italic-3d;
 	letter-spacing: normal;
-	font-size: calc(var(--index) * .7);
+	font-size: calc(var(--index) * .8);
 	line-height: 3;
 }
 .button-start{
