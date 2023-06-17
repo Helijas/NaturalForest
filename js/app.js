@@ -10,9 +10,16 @@ if (window.screen.width >= 769){
 } else if(window.screen.width <= 769){
 	if (window.DeviceMotionEvent) {
 		window.addEventListener('devicemotion', motion_hook, false);
+		Object.assign(document.documentElement, {
+			style: `
+			--move-x: ${(accelerationIncludingGravity.x - window.innerWidth / 2) * -0.5}deg;
+			--move-y: ${(accelerationIncludingGravity.y - window.innerHeight / 2) * -0.5}deg;
+			`
+		})
 	}
 	else {
 		// DeviceMotionEvent не поддерживается
+		console.log('DeviceMotionEvent не поддерживается')
 	}
 	
 	// Обработчик события DeviceMotionEvent
@@ -22,12 +29,7 @@ if (window.screen.width >= 769){
 			+ 'Y=' + event.accelerationIncludingGravity.y
 			+ 'Z=' + event.accelerationIncludingGravity.z
 		);
-		Object.assign(document.documentElement, {
-			style: `
-			--move-x: ${(event.accelerationIncludingGravity.x - window.innerWidth / 2) * -0.004}deg;
-			--move-y: ${(event.accelerationIncludingGravity.y - window.innerHeight / 2) * -0.009}deg;
-			`
-		})
+		
 	}
 }
 
