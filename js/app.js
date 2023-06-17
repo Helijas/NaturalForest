@@ -31,5 +31,6 @@ if (window.screen.width >= 769){
 			`
 		})
 	}
+	motion_hook()
 }
 
