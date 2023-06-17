@@ -46,7 +46,7 @@ body{
 @media (max-width: 768px) {
 	.layers__container{
 		transform: rotateX(var(--move-y)) rotateY(var(--move-x));
-		transition: transform 0.3s ease;
+		transition: transform 1s ease;
 	}
 }
 
